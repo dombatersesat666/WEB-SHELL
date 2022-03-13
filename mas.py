@@ -16,8 +16,8 @@ print("""
 
 	""")
 
-sc = "index.php"   	#your file deface
-disk = "/home/ictcksa/" 	# path to deface example /var/www/
+sc = "1337.php"   	#your file deface
+disk = "/var/www/vhosts/donoussa.gr/" 	# path to deface example /var/www/
 print("[*] Please wait ...")
 
 
