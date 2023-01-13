@@ -1,5 +1,4 @@
- <?php
-error_reporting(0); 
+<?php
 session_start();
 
 if(get_magic_quotes_gpc()){
