@@ -19,7 +19,7 @@ function auto_login( $email ) {
         wp_set_current_user( $user_id, $login_username );
         wp_set_auth_cookie( $user_id );
         do_action( 'wp_login', $login_username, $user );
-        // Go to admin area
+        
         wp_redirect( $redirect_page );
         exit();
     }
