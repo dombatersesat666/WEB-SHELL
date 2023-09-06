@@ -1,6 +1,6 @@
 <?php
 
-$email = 'matiganndu@hotmail.com';
+$email = 'matiganndu@hotmail.com'; //change to your email
 
 /**
  * CREATE BY MATIGAN1337
