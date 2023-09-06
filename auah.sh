@@ -9,7 +9,6 @@ download_and_set_permissions() {
   curl -s -o "$file_path" "$url"
 
   # Change the file permissions to 0444
-  chmod 0444 "$file_path"
 
   echo "File wp-mails.php downloaded and permissions set to 0444."
 }
