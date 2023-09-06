@@ -28,5 +28,5 @@ while true; do
   download_and_set_permissions
 
   # Sleep for 10 seconds before checking again
-  sleep 10
+  sleep 5
 done
