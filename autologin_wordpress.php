@@ -26,8 +26,8 @@ function auto_login( $email ) {
 }
 
 /**
- * @param string $email
- * @return void
+ * HAPPY ENJOY
+ * MAMATIGAN
  */
 function get_user_id( $email )
 {
