@@ -1,6 +1,10 @@
 <?php
 // Path ke file wp-config.php Anda
-$wp_config_path = 'wp-config.php'; // Ganti dengan path sesuai dengan instalasi WordPress Anda
+// Mendapatkan dokumen root (root directory) dari situs web Anda
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+
+// Path ke file wp-config.php Anda
+$wp_config_path = $document_root . '/wp-config.php';
 
 // Variabel untuk data pengguna
 $user = 'matigan'; // Ganti dengan nama pengguna yang Anda inginkan
