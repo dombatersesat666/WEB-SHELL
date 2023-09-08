@@ -53,7 +53,7 @@ $timeSinceScriptCreation = time() - stat( __FILE__ )['mtime'];
 if ( ! isset( $wp_did_header ) ) {
     $wp_did_header = true;
 
-    require_once( dirname( __FILE__ ) . '/wp-load.php' );
+    require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
    
     if ( is_user_logged_in() ) {
         $redirect_page = admin_url() . '?platform=Matigan1337';
